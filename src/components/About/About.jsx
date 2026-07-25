@@ -3,6 +3,7 @@ import ReactTypingEffect from 'react-typing-effect';
 import Tilt from 'react-parallax-tilt';
 // import profileImage from '../../assets/profile2.png';
 import profileImage from '../../assets/abhishek-photo.jpeg';
+import resumePdf from '../../assets/resume/Abhishek_Saini_Resume.pdf';
 
 const About = () => {
   return (
@@ -50,7 +51,8 @@ const About = () => {
           </p>
           {/* Resume Button */}
           <a
-            href="https://drive.google.com/file/d/13Pw29yG8jEOPSiJKgINB5C114TQWCZvw/view?usp=sharing"
+            href={resumePdf}
+            download="Abhishek_Saini_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
