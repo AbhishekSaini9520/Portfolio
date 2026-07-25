@@ -6,21 +6,37 @@ import "react-toastify/dist/ReactToastify.css";
 const Contact = () => {
   const form = useRef();
   const [isSent, setIsSent] = useState(false);
+  const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
   const sendEmail = (e) => {
     e.preventDefault();
 
+    if (!serviceId || !templateId || !publicKey) {
+      toast.error("EmailJS environment variables are missing.", {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        theme: "dark",
+      });
+      return;
+    }
+
     emailjs
       .sendForm(
-        "service_ntldk4j",  // Replace with your EmailJS Service ID
-        "template_jhwbgmf",  // Replace with your EmailJS Template ID
+        serviceId,
+        templateId,
         form.current,
-        "gONXlHzb2TXpRSaqN"  // Replace with your EmailJS Public Key
+        publicKey
       )
       .then(
         () => {
           setIsSent(true);
-          form.current.reset(); // Reset form fields after sending
+          form.current.reset();
           toast.success("Message sent successfully! ✅", {
             position: "top-right",
             autoClose: 3000,
