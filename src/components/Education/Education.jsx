@@ -6,7 +6,7 @@ const Education = () => {
   return (
     <section
       id="education"
-      className="py-24 px-[12vw] md:px-[7vw] lg:px-[10vw] font-sans bg-skills-gradient clip-path-custom-3"
+      className="py-24 px-[12vw] md:px-[7vw] lg:px-[7vw] font-sans bg-skills-gradient clip-path-custom-3"
     >
       {/* Section Title */}
       <div className="text-center mb-16">
@@ -65,7 +65,7 @@ const Education = () => {
               >
                 {/* Header */}
                 <div className="flex items-center gap-4">
-                  <div className="bg-white rounded-xl p-3 flex items-center justify-center w-16 h-16">
+                  <div className="bg-white rounded-xl p-3 flex items-center justify-center w-16 h-16 overflow-hidden">
                     <img
                       src={edu.img}
                       alt={edu.school}

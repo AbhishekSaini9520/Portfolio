@@ -6,7 +6,7 @@ import Tilt from "react-parallax-tilt";
 const Skills = () => (
   <section
     id="skills"
-    className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans bg-skills-gradient clip-path-custom"
+    className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[7vw] font-sans bg-skills-gradient clip-path-custom"
   >
     {/* Section Title */}
     <div className="text-center mb-8">
@@ -66,7 +66,7 @@ const Skills = () => (
                   <img
                     src={skill.logo}
                     alt={skill.name}
-                    className={`${skill.rating ? "w-10 h-10 mb-2" : "w-6 h-6 sm:w-8 sm:h-8"}`}
+                    className={`${skill.rating ? "w-10 h-10 mb-2 object-contain" : "w-6 h-6 sm:w-8 sm:h-8 object-contain"}`}
                   />
 
                   <span

@@ -246,7 +246,7 @@ export const experiences = [
     {
       id: 0,
       img: csjmu,
-      imgClass: "w-40 h-15",
+      imgClass: "w-10 h-10",
       school: "Chhatrapati Shahu Ji Maharaj University (CSJMU), Kanpur",
       date: "July 2023 - June 2027",
       grade: "8.2 CGPA",
@@ -256,7 +256,7 @@ export const experiences = [
     {
       id: 1,
       img: cbseboard,
-       imgClass: "w-20 h-20", 
+       imgClass: "w-10 h-10", 
       school: "Hilton Convent Senior Secondary School",
       date: "Apr 2021 - Mar 2022",
       grade: "82%",
@@ -266,7 +266,7 @@ export const experiences = [
     {
       id: 2,
       img: cbseboard,
-       imgClass: "w-20 h-20", 
+       imgClass: "w-10 h-10", 
       school: "Hilton Convent Senior Secondary School",
       date: "Apr 2019 - March 2020",
       grade: "85%",

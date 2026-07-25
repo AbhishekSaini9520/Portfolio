@@ -8,11 +8,11 @@ const About = () => {
   return (
     <section
       id="about"
-    className="py-4 px-[7vw] md:px-[7vw] lg:px-[20vw] font-sans mt-8"
+      className="py-4 px-[7vw] md:px-[7vw] lg:px-[7vw] font-sans mt-8"
     >
       <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-10">
         {/* Left Side */}
-        <div className="md:w-1/2 text-center md:text-left mt-8 md:mt-0">
+        <div className="md:w-[58%] lg:w-3/5 text-center md:text-left mt-8 md:mt-0">
           {/* Greeting */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2 leading-tight">
             Hi, I am
@@ -46,7 +46,7 @@ const About = () => {
           </h3>
           {/* About Me Paragraph */}
           <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
-           I'm a Computer Science undergraduate and Full Stack Developer passionate about building scalable web applications and AI-powered solutions. I specialize in React.js, Node.js, Express.js, PostgreSQL, MongoDB, and modern JavaScript, with a strong foundation in Data Structures & Algorithms. Having solved 1,000+ coding problems and developed production-ready full-stack projects, I enjoy transforming complex ideas into clean, efficient, and user-focused software while continuously exploring modern software engineering and AI technologies.
+            I'm a Computer Science undergraduate and Full Stack Developer passionate about building scalable web applications and AI-powered solutions. I specialize in React.js, Node.js, Express.js, PostgreSQL, MongoDB, and modern JavaScript, with a strong foundation in Data Structures & Algorithms. Having solved 1,000+ coding problems and developed production-ready full-stack projects, I enjoy transforming complex ideas into clean, efficient, and user-focused software while continuously exploring modern software engineering and AI technologies.
           </p>
           {/* Resume Button */}
           <a
@@ -61,12 +61,12 @@ const About = () => {
           >
             DOWNLOAD RESUME
           </a>
-          
+
         </div>
         {/* Right Side */}
-        <div className="md:w-1/2 flex justify-center md:justify-end">
+        <div className="md:w-[42%] lg:w-2/5 flex justify-center md:justify-end shrink-0">
           <Tilt
-            className="w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] border-4 border-purple-700 rounded-full"
+            className="w-40 sm:w-56 md:w-52 lg:w-60 xl:w-72 2xl:w-80 max-w-full aspect-square border-4 border-purple-700 rounded-full"
             tiltMaxAngleX={20}
             tiltMaxAngleY={20}
             perspective={1000}
